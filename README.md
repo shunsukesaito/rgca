@@ -10,7 +10,7 @@ If you find Relightable Gaussian Codec Avatars useful for your work please cite:
       year={2023},
       eprint={2312.03704},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      primaryClass={cs.GR}
 }
 ```
 
