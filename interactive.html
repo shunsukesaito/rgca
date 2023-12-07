@@ -105,26 +105,17 @@
   </div>
 </section>
 
-
 <section class="section">
   <div class="container is-max-desktop">
-    <h3 class="title is-4">Here is an interactive viewer for our disentangled avatar control. Drag the sliders to change only one component at a time.</h3>
+    <h3 class="title is-4">View/Expression/Light</h3>
     <div class="columns is-centered">
       <div class="column is-half">
-        <div class="hyper-space-wrapper has-text-centered">
-          <!--<div class="hyper-space">
-             <div class="hyper-space-cursor"></div>
-          </div> -->
+        <div class="viewer-space-wrapper has-text-centered">
           <div id="sliders"></div>
-          <!-- X: light direction, Y: facial expression -->
         </div>
       </div>
       <div class="column is-half has-text-centered">
-        <div class="hyper-grid-wrapper">
-          <div class="hyper-grid-rgb">
-            <img src="./static/images/grid_compressed2.jpg"/>
-          </div>
-        </div>
+        <canvas class="viewer-canvas" width="888" height="964"></canvas>
         Relightable Gaussian Codec Avatar
       </div>
     </div>
@@ -146,6 +137,10 @@
   </div>
 </section>
 
+<video id="interact" preload muted height="100%" hidden>
+  <source src="./static/videos/interact101020.mp4"
+          type="video/mp4">
+</video>
 
 <footer class="footer">
   <div class="container">
