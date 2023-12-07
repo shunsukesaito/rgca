@@ -113,7 +113,7 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="rgca">Relightable Gaussian Codec Avatars</span> generalize to novel expressions, gaze, view points, and illuminations with global light transport and spatially all-frequency reflections in real-time.
+        <span class="rgca">Relightable Gaussian Codec Avatars</span> generalize to novel expressions, gaze, view points, and illuminations with global light transport and all-frequency reflections in real-time.
       </h2>
     </div>
   </div>
@@ -243,12 +243,26 @@
           </div>
         </div>
         <p>
-          You can try our interactive viewer with individual control of view/expression/light <a href="interactive.html">here</a>. <br>
-           (Caution: Currently it may cause a slowdown in some browsers. We are working on fixing it.)
+          You can try our interactive viewer with individual control of view/expression/light here. <br>
         </p>
     </div>
     </div>
     <!--/ Method. -->
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="viewer-space-wrapper has-text-centered">
+              <div id="sliders"></div>
+            </div>
+          </div>
+          <div class="column is-half has-text-centered">
+            <canvas class="viewer-canvas" width="888" height="964"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Application. -->
     <div class="columns is-centered has-text-centered">
@@ -313,6 +327,10 @@
   </div>
 </section>
 
+<video id="interact" preload muted height="100%" hidden>
+  <source src="./static/videos/interact101020.mp4"
+          type="video/mp4">
+</video>
 
 <footer class="footer">
   <div class="container">
